@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Products And Services</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-row>
+    <ion-card>
+      <div *ngFor="let product of Products">
+        <img src="assets/cat/{{ product }}" />
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <button ion-button block class="button-border-orange">{{ 'PRODUCT_NAME' | translate }}</button>
+          </ion-col>
+          <ion-col col-6>
+            <button ion-button block class="button-border-blue">{{ 'PRODUCT_PRICE' | translate }}</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+    </ion-card>
+  </ion-row>
+</ion-content>

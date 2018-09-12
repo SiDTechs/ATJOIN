@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Business Videos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <!-- <input placeholder="Enter a video id" #videoId>
+  <button ion-button (click)="VideoPlay(videoId.value)">
+    <ion-icon name="play"></ion-icon>
+  </button> -->
+
+  <ion-list>
+      <ion-card *ngFor="let video of videos">
+          <ion-card-header>
+              {{ video.title }}
+          </ion-card-header>
+          <ion-card-content>
+            <div class="video-container">
+              <iframe [src]="video.video | youtube" frameborder="0" width="560" height="315"></iframe>
+          </div>
+          </ion-card-content>
+      </ion-card>
+  </ion-list>
+
+</ion-content>

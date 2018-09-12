@@ -1,0 +1,28 @@
+page-contact-info {
+  .margin-r {
+    margin-right: 10px;
+  }
+
+  .margin-center-horizontal {
+    text-align: center;
+  }
+
+  .cntr {
+    margin: auto;
+  }
+}
+
+.container {
+    position: relative;
+    width: 249px;
+  }
+  
+  .mask {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 195px;
+    width: 100%;
+    background: radial-gradient(circle, transparent 81px, white 81px);
+  }

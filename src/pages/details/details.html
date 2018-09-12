@@ -1,0 +1,122 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/cat/benches.jpg">
+      </ion-avatar>
+      <h2>
+        <b>Arnav Technosys</b>
+        <p>Arnav Technosys, Bulilding No. 06, Mundhe Apt., Mathura Shinde Nagar, Paregaon Road, Yeola, Nashik, Maharashtra(India)-423401</p>
+      </h2>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="call"></ion-icon>
+          <div>Call</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="mail"></ion-icon>
+          <div>Email</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <button ion-button icon-left clear small>
+          <ion-icon name="send"></ion-icon>
+          <div>Inquiry</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-slides autoplay="5000" loop="true" speed="3000">
+      <ion-slide *ngFor="let slide of slideData">
+        <img src="assets/cat/{{ slide.image }}" />
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <ion-card>
+    <ion-slides autoplay="5000" loop="true" speed="3000">
+      <ion-slide *ngFor="let title of slideTitle" class="card-title">{{ title }}</ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <ion-card>
+    <ion-slides autoplay="5000" loop="true" speed="3000">
+      <ion-slide *ngFor="let subtitle of slideSubTitle" class="card-subtitle">{{ subtitle }}</ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <ion-card class="margin-bottomall">
+    <ion-card-content>
+      <ul>
+        <li>
+          <p>
+            <b>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+              Whoa. This is heavy.</b>
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+              Whoa. This is heavy.</b>
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+              Whoa. This is heavy.</b>
+          </p>
+        </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab center bottom class="share">
+    <button ion-fab color="atjoinorange" class="bordershare">
+      <ion-icon name="share"></ion-icon>
+    </button>
+    <ion-fab-list side="left">
+      <button ion-fab class="borderfacebook">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+      <button ion-fab class="borderwhatsapp">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </button>
+    </ion-fab-list>
+    <ion-fab-list side="right">
+      <button ion-fab class="bordertwitter">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+      <button ion-fab class="bordervimeo">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </button>
+    </ion-fab-list>
+    <ion-fab-list side="top">
+      <button ion-fab class="borderinstagram">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <button ion-fab class="bordergoogleplus">
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
